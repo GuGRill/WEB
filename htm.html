@@ -1,0 +1,92 @@
+<script src="https://koda.nu/simple.js">
+    Person = prompt ("Vill du göra en custom gubbe")
+    if (Person == "nej","Nej","NEJ")
+    {
+      color = ("Black")
+      color1 = ("pink")
+      color2 = ("blue")
+      color3 = ("blue")
+      color4 = ("red")
+      color5 = ("black")
+      color6 = ("pink")
+      color7 = ("red")
+      color8 = ("pink")
+      color9 = ("red")
+   
+      function update()
+     {
+       clearScreen ();
+   "Kropp"
+     rectangle(mouse.x -70,mouse.y -40 ,150,100, color);
+   "Hudvud"
+     circle(mouse.x +5,mouse.y -100, 100, color1);
+    "Ögon"
+     "Vänstr Öga" 
+     circle(mouse.x -40 ,mouse.y -120 , 10, color2);
+       circle(mouse.x -40 ,mouse.y -120 , 5, "black");
+     "Höger Öga"
+     circle(mouse.x +40,mouse.y-120, 10, color3);
+       circle(mouse.x +40,mouse.y-120, 5, "black");  
+       "Mun"
+     circle(mouse.x,mouse.y-60,40, color4 );
+        circle(mouse.x,mouse.y-75,50,color1);
+       "Näsa"
+     triangle(mouse.x.y,mouse.x.y-100,mouse.x.y,mouse.x.y,mouse.x.y,222, color5);
+     "Ben"
+         "Höger ben"
+       rectangle(mouse.x -40, mouse.y +60, 26, 100, color6);
+           "Byxor"
+           rectangle(mouse.x -45, mouse.y +60,35,45, color7);
+               rectangle(mouse.x -70,mouse.y +57,150,3, "orange");
+           
+       "vänster ben"
+       rectangle(mouse.x +35, mouse.y +60, 26, 100, color8);
+           "Byxor"
+           rectangle(mouse.x +30, mouse.y +60,35,45, color9);
+     }
+       
+    }
+    else if (Person == "Ja","JA","ja")
+    
+    {
+      color = prompt ("färg på kroppen?");
+    color1 = prompt ("färg på hudvudet?"); 
+    color2 = prompt ("färg på vänster öga?");
+    color3 = prompt ("färg på höger öga?");
+    color4 = prompt ("färg på munnden?");
+    color5 = prompt ("färg på näsan?");
+    color6 = prompt ("färg på höger ben?");
+    color7 = prompt ("färg på höger byx ben?");  
+    color8 = prompt ("färg på vänster ben?"); 
+    color9 = prompt ("färg på vänster byx ben?");  
+   "Kropp"
+     rectangle(225,350,150,100, color);
+   "Hudvud"
+     circle(300, 300, 100, color1);
+   "Ögon"
+     "Vänstr Öga"
+     circle(250, 280, 10, color2);
+       circle(250, 280, 5, "black");
+     "Höger Öga"
+     circle(350, 280, 10, color3);
+       circle(350, 280, 5, "black");
+     "Mun"
+     circle(300, 340,40, color4);
+        circle(300,325,50,color1);
+       "Näsa"
+     triangle(300,300,300,320,310,320,color5);
+     "Ben"
+         "Höger ben"
+       rectangle(255, 450, 26, 100, color6);
+           rectangle(250,451,35,45, color7);
+               rectangle(225,450,150,3, "orange");
+           
+       "vänster ben"
+       rectangle(330, 450, 26, 100, color8);
+           rectangle(326,450,35,45, color9);
+               rectangle(225,450,150,3, "orange");
+      
+    }
+     
+    
+   </script>
